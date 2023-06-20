@@ -23,3 +23,10 @@ body {
     background: var(--dark);
     color: #fff;
 }
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px; /*makes it center on big screen (>720p)*/
+    margin: 0 auto;
+}
+
