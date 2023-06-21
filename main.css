@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;500;700&display=swap');
+
+
 :root {
     --dark: #374151;
     --darker: #1F2937;
@@ -27,6 +30,7 @@ body {
 header {
     padding: 2rem 1rem;
     max-width: 800px; /*makes it center on big screen (>720p)*/
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -36,3 +40,50 @@ header h1 {
     margin-bottom: 1rem;
     color: var(--gray);
 }
+
+
+#new-task-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input{
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+    min-width: 73%;
+}
+
+#new-task-input::placeholder {
+    color: var(--gray);
+}
+
+#new-task-submit {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    min-width: 22%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /*makes the text gradient*/
+    cursor: pointer;
+    transition: opacity .2s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+#new-task-submit:active { /*when you click on it*/
+    opacity: 0.6;
+}
+
